@@ -1,0 +1,23 @@
+{
+    "idf.adapterTargetName": "esp32c3",
+    "idf.openOcdConfigs": [
+        "board/esp32c3-ftdi.cfg"
+    ],
+    "idf.portWin": "COM4",
+    "files.associations": {
+        "lvgl.h": "c",
+        "lvgl_task.h": "c",
+        "wifi_cz.h": "c",
+        "main.h": "c",
+        "images.h": "c",
+        "lv_hal_indev.h": "c",
+        "lv_conf_internal.h": "c",
+        "screen_backlight.h": "c",
+        "ledc.h": "c",
+        "semphr.h": "c",
+        "esp_err.h": "c",
+        "esp_log.h": "c",
+        "https_api.h": "c",
+        "esp_system.h": "c"
+    }
+}

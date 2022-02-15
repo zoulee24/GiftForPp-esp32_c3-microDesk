@@ -1,0 +1,46 @@
+set(IMAGR_SRC 
+"image_c/sunny.c" 
+"image_c/clear.c" 
+"image_c/cloudy.c" 
+"image_c/partly_cloudy.c" 
+"image_c/mostly_cloudy.c" 
+"image_c/overcast.c" 
+"image_c/shower.c" 
+"image_c/thunder_shower.c" 
+"image_c/light_rain.c" 
+"image_c/moderate_rain.c" 
+"image_c/storm.c" 
+"image_c/ice_rain.c" 
+"image_c/sleet.c" 
+"image_c/snow_flurry.c" 
+"image_c/light_snow.c" 
+"image_c/moderate_snow.c" 
+"image_c/heavy_snow.c" 
+"image_c/sand.c" 
+"image_c/sand_storm.c" 
+"image_c/foggy.c" 
+"image_c/haze.c" 
+"image_c/windy.c" 
+"image_c/tropical_storm.c" 
+"image_c/cold.c" 
+"image_c/unknown.c" 
+)
+
+idf_component_register(
+    SRCS 
+    "main.c"
+    "wifi_cz.c"
+    "nvs_cz.c"
+    "dns_server.c"
+    "AuthenticationServer.c"
+    "screen_backlight.c"
+    "https_api.c"
+    "images.c"
+    "lvgl_task.c"
+    ${IMAGR_SRC}
+    "WiFi_icon.c"
+    "gl_pic.c"
+    "man_pic.c"
+    INCLUDE_DIRS "include"
+    EMBED_FILES uploadscript.html
+)
